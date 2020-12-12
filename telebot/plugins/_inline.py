@@ -45,9 +45,9 @@ LOG_GP = Var.PRIVATE_GROUP_ID
 MESAG = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
-    else "`TeleBot PM security! Please wait for me to approve you. 😊"
+    else "`@ImJaniya's PM security! Please wait for me to approve you. 😊"
 )
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TeleBot User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@ImJaniya"
 USER_BOT_WARN_ZERO = "`I had warned you not to spam. Now you have been blocked and reported until further notice.`\n\n**GoodBye!** "
 
 if Var.LOAD_MYBOT == "True":
@@ -98,7 +98,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     [
                         Button.url(
                             "Deploy Now!",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot",
+                            "https://heroku.com/deploy?template=https://github.com/ImJanindu/TeleBot",
                         )
                     ],
                 ],
@@ -123,13 +123,13 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"TeleBot - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("Repo", "https://github.com/xditya/TeleBot"),
+                        Button.url("Repo", "https://github.com/ImJanindu/TeleBot"),
                         Button.url(
                             "Deploy",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot",
+                            "https://heroku.com/deploy?template=https://github.com/ImJanindu/TeleBot",
                         ),
                     ],
-                    [Button.url("Support", "https://t.me/TeleBotSupport")],
+                    [Button.url("Support", "https://t.me/InfJE")],
                 ],
             )
         else:
@@ -137,19 +137,19 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 "Source Code",
                 text="**Welcome to TeleBot**\n\n`Click below buttons for more`",
                 buttons=[
-                    [custom.Button.url("Creator👨‍🦱", "https://t.me/its_xditya")],
+                    [custom.Button.url("Creator👨‍🦱", "https://t.me/ImJaniya")],
                     [
                         custom.Button.url(
-                            "👨‍💻Source Code‍💻", "https://github.com/xditya/TeleBot"
+                            "👨‍💻Source Code‍💻", "https://github.com/ImJanindu/TeleBot"
                         ),
                         custom.Button.url(
                             "Deploy 🌀",
-                            "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot",
+                            "https://heroku.com/deploy?template=https://github.com/ImJanindu/TeleBot",
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "Updates and Support Group↗️", "https://t.me/TeleBotSupport"
+                            "Updates and Support Group↗️", "https://t.me/InfinityJE"
                         )
                     ],
                 ],
@@ -170,7 +170,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.edit(buttons=buttons)
         else:
             reply_pop_up_alert = (
-                "Please get your own Userbot from @TeleBotHelp , and don't use mine!"
+                "Please get your own userbot, and don't use mine 😬"
             )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -181,7 +181,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [TeleBot](t.me/TeleBotSupport)"
+                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [Janindu 🇱🇰](t.me/ImJaniya)"
             )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"reopen")))
@@ -252,7 +252,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"Oh, so you are here to spam 😤\nGoodbye.\nYour message has been read and successfully ignored."
+                f"Oh, so you are here to spam 😬\nGoodbye.\nYour message has been read and successfully ignored."
             )
             await borg(functions.contacts.BlockRequest(event.query.user_id))
             target = await event.client(GetFullUserRequest(event.query.user_id))

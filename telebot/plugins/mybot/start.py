@@ -85,7 +85,7 @@ async def start_all(event):
                                   caption=startotherena,
                                   buttons=[
                                       [Button.url(
-                                          "TeleBot", url="https://github.com/xditya/TeleBot")],
+                                          "User Bot", url="https://github.com/ImJanindu/TeleBot")],
                                       [Button.inline(
                                           "Whats this?", data="telebot")]
                                   ]
@@ -95,7 +95,7 @@ async def start_all(event):
                                      startotherena,
                                      buttons=[
                                          [Button.url(
-                                             "TeleBot", url="https://github.com/xditya/TeleBot")],
+                                             "User Bot", url="https://github.com/ImJanindu/TeleBot")],
                                          [Button.inline(
                                              "Whats this?", data="telebot")]
                                      ]
@@ -113,11 +113,11 @@ async def owner(event):
                                  [Button.inline(
                                      "Settings ⚙️", data="settings"),
                                   Button.inline(
-                                     "Stats ⚙️", data="stats")],
+                                     "Stats 📊", data="stats")],
                                  [Button.inline("Broadcast",
                                                 data="telebroad")],
                                  [Button.url("Support",
-                                             url="https://t.me/TeleBotSupport")]
+                                             url="https://t.me/InfJE")]
                              ])
 
 
@@ -181,10 +181,10 @@ async def settings(event):
 async def settings(event):
     await event.edit("Browse through the available options:",
                      buttons=[
-                         [(Button.url("Repository", url="https://github.com/xditya/TeleBot")),
-                          (Button.url("Deploy", url="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot%2F&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot"))],
+                         [(Button.url("Repository", url="https://github.com/ImJanindu/TeleBot")),
+                          (Button.url("Deploy", url="https://heroku.com/deploy?template=https://github.com/ImJanindu/TeleBot"))],
                          [Button.url("Support",
-                                     url="https://t.me/TeleBotSupport")]
+                                     url="https://t.me/InfJE")]
                      ])
 
 

@@ -13,7 +13,6 @@ Do fork and star the repo
 
 # Disclaimer
 ```
-/**
     	Improper use may lead to ban.
     	I am not responsible if you misuse this bot.
 	This bot is just for managing groups more effectively and having some fun
@@ -22,6 +21,5 @@ Do fork and star the repo
 	If you spammed and got reported again and again, 
 	and, at last got your account banned, and you
 	point your fingers at me, I'll be rolling on the floor laughing at you.
-/**
 ```
 

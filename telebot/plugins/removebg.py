@@ -78,7 +78,7 @@ async def _(event):
         ms = (end - start).seconds
         await eor(
             event,
-            "Removed dat annoying Backgroup in {} seconds, powered by @TeleBotHelp".format(
+            "Removed dat annoying Backgroup in {} seconds, powered by @InfinityJE".format(
                 ms
             ),
         )

@@ -12,7 +12,7 @@ async def corona(event):
         country = (event.pattern_match.group(1)).title()
     else:
         country = "World"
-    catevent = await edit_or_reply(event, "`collecting data...........`")
+    catevent = await edit_or_reply(event, "`Collecting data...........`")
     covid = Covid(source="worldometers")
     try:
         country_data = covid.get_status_by_country_name(country)
@@ -29,7 +29,7 @@ async def corona(event):
         data += f"\n😊Recovered   : <code>{country_data['recovered']}</code>"
         data += f"\n💉Total tests    : <code>{country_data['total_tests']}</code>"
         data += f"\n🥺New Cases   : <code>{country_data['new_cases']}</code>"
-        data += f"\n😟New Deaths : <code>{country_data['new_deaths']}</code>"
+        data += f"\n☹️New Deaths : <code>{country_data['new_deaths']}</code>"
         await catevent.edit(
             "<b>Corona Virus Info of {}:\n{}</b>".format(country, data),
             parse_mode="html",

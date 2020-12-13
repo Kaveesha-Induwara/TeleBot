@@ -85,7 +85,7 @@ async def start_all(event):
                                   caption=startotherena,
                                   buttons=[
                                       [Button.url(
-                                          "User Bot", url="https://github.com/ImJanindu/TeleBot")],
+                                          "User Bot", url="https://github.com/kaviya-admin/TeleBot")],
                                       [Button.inline(
                                           "Whats this?", data="telebot")]
                                   ]
@@ -95,7 +95,7 @@ async def start_all(event):
                                      startotherena,
                                      buttons=[
                                          [Button.url(
-                                             "User Bot", url="https://github.com/ImJanindu/TeleBot")],
+                                             "User Bot", url="https://github.com/kaviya-admin/TeleBot")],
                                          [Button.inline(
                                              "Whats this?", data="telebot")]
                                      ]
@@ -117,7 +117,7 @@ async def owner(event):
                                  [Button.inline("Broadcast",
                                                 data="telebroad")],
                                  [Button.url("Support",
-                                             url="https://t.me/InfJE")]
+                                             url="https://t.me/Tech_Wizard_Ent")]
                              ])
 
 
@@ -143,7 +143,7 @@ async def logs(event):
         caption="**Heroku** TeleBot Logs",
         buttons=[
             [Button.url("View Online", f"{url}")],
-            [Button.url("Crashed?", "t.me/TeleBotHelpChat")]
+            [Button.url("Crashed?", "t.me/Tech_Wizard_Ent")]
         ])
     await asyncio.sleep(5)
     return os.remove('logs.txt')
@@ -181,10 +181,10 @@ async def settings(event):
 async def settings(event):
     await event.edit("Browse through the available options:",
                      buttons=[
-                         [(Button.url("Repository", url="https://github.com/ImJanindu/TeleBot")),
-                          (Button.url("Deploy", url="https://heroku.com/deploy?template=https://github.com/ImJanindu/TeleBot"))],
+                         [(Button.url("Repository", url="https://github.com/kaviya-admin/TeleBot")),
+                          (Button.url("Deploy", url="https://heroku.com/deploy?template=https://github.com/kaviya-admin/TeleBot"))],
                          [Button.url("Support",
-                                     url="https://t.me/InfJE")]
+                                     url="https://t.me/Tech_Wizard_Ent")]
                      ])
 
 
